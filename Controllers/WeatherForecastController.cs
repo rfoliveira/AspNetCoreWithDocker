@@ -27,5 +27,8 @@ namespace AspNetCoreWithDocker.Controllers
         {
             return Enumerable.Range(1, 10);
         }
+
+        [HttpGet("summaries")]
+        public string[] GetSummaries() => Summaries;
     }
 }
