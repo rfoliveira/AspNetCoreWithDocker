@@ -25,9 +25,7 @@ namespace AspNetCoreWithDocker.Controllers
         [HttpGet]
         public IEnumerable<int> Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 10).Select(index => index)
-            .ToArray();
+            return Enumerable.Range(1, 10);
         }
     }
 }
